@@ -6,29 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorites</title>
     <style>
-        
-        footer{
+        h1{
+            text-align: center;
+        }
+        .hobbies{
+            position: relative;
+            margin-left: 10%;
+            margin-right: 10%;
+            border: 1px solid black;
+            margin-bottom: 100px;
+            height: 700px;            
+        }
+        .chess{
+            display: inline-block;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 5%;
             
+        }   
+        .badminton{
+            display: inline-block;
+            text-align: center;
+            margin-right: 5%;
+            right: 0;
+        }
+        footer{
             margin: 0;
             padding: 0%;
-            height: 10%;
+            height: 5%;
             width: 100%;
             position:fixed;
             bottom: 0;
             left:0;
-            background-color: darkblue;
+            background-color:darkblue;
+        }
+        a:link{
+            color: green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a:visited{
+            color: red;
         }
     </style>
 </head>
 <body>
-
+    <h1>Hobbies and Interests</h1>
+    <main>
+        <div class="hobbies">
+            <div class="chess">
+                <h2>Chess</h2>
+                <img src="images/white_king.png">
+            </div>
+            <div class="badminton">
+                <h2>Badminton</h2>
+            </div>
+        </div>
+    </main>
     
 </body>
 <footer>
     <!--I can also make a dropdown in addition to a footer-->
-    <a class="foooter" href="index.html">ABOUT ME</a>
-    <a class="foooter" href="favorites.html">FAVORITES HOBBIES</a>
-    <a class="foooter" href="skills.html">SKILLS</a>
-    <a class="foooter" href="spots.html">SPOTS IN NYC</a>
+    <a class="footer" href="index.html">ABOUT ME</a>
+    <a class="footer" href="favorites.html">FAVORITES HOBBIES</a>
+    <a class="footer" href="skills.html">SKILLS</a>
+    <a class="footer" href="spots.html">SPOTS IN NYC</a>
 </footer>
 </html>
