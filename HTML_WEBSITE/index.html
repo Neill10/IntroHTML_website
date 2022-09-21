@@ -6,26 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <style>
-        body{
-            background-color: black;
+        body,html{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            
         }
         .intro{
-            background-color: darkblue;
-            padding: 0;
-            margin: 0;
+            min-height: 100%;
+            background: linear-gradient(to top, #ff9933 30%, #0099ff 76%);
+            margin-top: 0;
         }
         .greeting{
             font-family:fantasy;
             font-size: 500%;
-            background-color: orange;
-            color: rgb(22, 22, 168);
+            color: linear-gradient(to bottom, #ff9933 17%, #3399ff 76%);
             text-align: center;
-            padding: 0%;
             margin: 0;
         }
 
         .info{
+            margin: 0;
             display:inline-block;
+            
+        }
+        .infowrapper{
+            margin:0;
+            background: linear-gradient(to bottom, #ff9933 14%, #6699ff 53%);
+            height: 85vh;
         }
         footer{
             margin: 0;
@@ -37,6 +45,9 @@
             left:0;
             background-color:darkblue;
         }
+        a{
+            margin: 0;
+        }
         a:link{
             color: green;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,7 +56,10 @@
             color: red;
         }
         div{
-            color: white;
+            margin: 0;
+        }
+        h1{
+            margin: 0;
         }
     </style>
 </head>
@@ -53,7 +67,7 @@
     <div class="intro">
         <h1 class="greeting"> Home Page</h1>
     </div>
-    <div>
+    <div class="infowrapper">
         <h1>ABOUT ME</h1>
         <div class="info" id="name">
             <h2>My name is Neil Liu</h2>

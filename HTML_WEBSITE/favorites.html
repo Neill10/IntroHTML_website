@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorites</title>
     <style>
+        body{
+            background-image:url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
         h1{
             text-align: center;
         }
         .hobbies{
-            position: relative;
+            display: flex;
+            position: fixed;
             margin-left: 10%;
             margin-right: 10%;
             border: 1px solid black;
             margin-bottom: 100px;
-            height: 700px;            
+            height: 600px;            
         }
         .chess{
-            display: inline-block;
             text-align: center;
-            margin-top: 10px;
-            margin-left: 5%;
+            width: 600px;
+            height: 800px;
             
         }   
         .badminton{
-            display: inline-block;
             text-align: center;
-            margin-right: 5%;
-            right: 0;
+            width: 600px;
+            height: 800px;
         }
         footer{
             margin: 0;
@@ -47,6 +52,15 @@
         a:visited{
             color: red;
         }
+        #chessgif{
+            width: 400px;
+            height: 400px;
+        }
+        .verticalbreak{
+            border: 1px solid rgb(21, 69, 135);
+            height: auto;
+            width: 2px;;
+        }
     </style>
 </head>
 <body>
@@ -55,8 +69,11 @@
         <div class="hobbies">
             <div class="chess">
                 <h2>Chess</h2>
-                <img src="images/white_king.png">
+                <img id="chessgif"src="/HTML_WEBSITE/images/TypicalGameAgainstSam.gif">
             </div>
+            <div class="verticalbreak">
+            </div>
+
             <div class="badminton">
                 <h2>Badminton</h2>
             </div>
