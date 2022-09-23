@@ -12,9 +12,6 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-        h1{
-            text-align: center;
-        }
         .hobbies{
             display: flex;
             position: fixed;
@@ -22,7 +19,8 @@
             margin-right: 10%;
             border: 1px solid black;
             margin-bottom: 100px;
-            height: 600px;            
+            height: 600px;         
+            background: linear-gradient(to top, #6699ff 0%, #ff9966 100%);
         }
         .chess{
             text-align: center;
@@ -43,7 +41,10 @@
             position:fixed;
             bottom: 0;
             left:0;
-            background-color:darkblue;
+           background: linear-gradient(to top, #98cfa5 10%, #6ece7e 51%);
+        }
+        a{
+            margin: 1%;
         }
         a:link{
             color: green;
@@ -57,9 +58,31 @@
             height: 400px;
         }
         .verticalbreak{
+            margin-top: 2%;
+            margin-bottom: 3%;
             border: 1px solid rgb(21, 69, 135);
             height: auto;
             width: 2px;;
+            background-color: rgb(21, 69, 135);;
+        }
+        article{
+            text-align: center;
+            margin: 5%;
+            padding: 1%;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        img{
+            max-width: 375px;
+            max-height: 375px;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 2px darkgreen;
+            color:#FF7518;
         }
     </style>
 </head>
@@ -70,12 +93,21 @@
             <div class="chess">
                 <h2>Chess</h2>
                 <img id="chessgif"src="/HTML_WEBSITE/images/TypicalGameAgainstSam.gif">
+                <article>
+                    <p>Chess is my longest hobby to this day. It's a fun and easy game to pick up</p>
+                    <a class="chessLink"href="https://www.chess.com/member/DoritosBoi">Recent Games&#169</a>
+                </article>
+                
             </div>
             <div class="verticalbreak">
             </div>
 
             <div class="badminton">
                 <h2>Badminton</h2>
+                <img src="/HTML_WEBSITE/images/badminton gif.gif">
+                <article>
+                    <p>Whenever I hang out with friends I would play badminton.</p>
+                </article>
             </div>
         </div>
     </main>
@@ -84,7 +116,6 @@
 <footer>
     <!--I can also make a dropdown in addition to a footer-->
     <a class="footer" href="index.html">ABOUT ME</a>
-    <a class="footer" href="favorites.html">FAVORITES HOBBIES</a>
     <a class="footer" href="skills.html">SKILLS</a>
     <a class="footer" href="spots.html">SPOTS IN NYC</a>
 </footer>

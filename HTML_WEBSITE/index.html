@@ -6,44 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <style>
-        body,html{
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            
-        }
-        .intro{
-            min-height: 100%;
-            background: linear-gradient(to top, #ff9933 30%, #0099ff 76%);
-            margin-top: 0;
-        }
-        .greeting{
-            font-family:fantasy;
-            font-size: 500%;
-            color: linear-gradient(to bottom, #ff9933 17%, #3399ff 76%);
-            text-align: center;
-            margin: 0;
-        }
-
-        .info{
-            margin: 0;
-            display:inline-block;
-            
-        }
-        .infowrapper{
-            margin:0;
-            background: linear-gradient(to bottom, #ff9933 14%, #6699ff 53%);
-            height: 85vh;
-        }
-        footer{
-            margin: 0;
-            padding: 0%;
-            height: 5%;
-            width: 100%;
-            position:fixed;
-            bottom: 0;
-            left:0;
-            background-color:darkblue;
+        body{
+            background-image:url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
         a{
             margin: 0;
@@ -55,38 +22,73 @@
         a:visited{
             color: red;
         }
-        div{
-            margin: 0;
+        .infowrapper{
+            display: flex;
+            justify-content: center;
+            border: 2px solid blue;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            margin-left: 10%;
+            margin-right: 9%;
+            height: 600px;
+            box-shadow: -20px 20px rgb(50, 140, 171);
+            background: linear-gradient(to bottom, #6699ff 0%, #ff9966 100%)   
         }
-        h1{
-            margin: 0;
+        .info{
+            text-align: center;
+            border: 1px solid blue;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            width: 350px;
+        }
+        
+        .hrbreak{
+            border: 2px solid blue;
+            background-color: blue;
+            margin: 2%;
+        }
+        .imageOfMe{
+            border-radius:50%;
+            height: 50%;
+            margin-right: 10%;
+            margin-top: 10%;
+            margin-bottom:10%;
+        }
+        h2{
+            text-shadow: 2px 2px lightblue;
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 8%;
+            font-weight: bold;
+        }
+        ul{
+            margin-right: 10%;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="intro">
-        <h1 class="greeting"> Home Page</h1>
-    </div>
     <div class="infowrapper">
-        <h1>ABOUT ME</h1>
+        <img class="imageOfMe"src="images/sadge.jpg">
         <div class="info" id="name">
-            <h2>My name is Neil Liu</h2>
-            
+            <h2>ABOUT ME</h2>
+            <div class="hrbreak"></div>
+            <article>
+                <p>My name is Neil&#169 L.</p>
+                <!--There could be font color changes?-->
+                <p>Some of my interests include:</p>
+                <ul>Games</ul>
+                <ul>Chess</ul>
+                <ul>Memes</ul>
+                <p>Click Below to Learn More About Me</p>
+                <a class="footer" href="favorites.html" relative>HOBBIES</a>
+                <a class="footer" href="skills.html">SKILLS</a>
+                <a class="footer" href="spots.html">SPOTS IN NYC</a>
+            </article>
         </div>
-
-        <div class="info" id="school">
-            <h2>Brooklyn Technical</h2>
-            <img src="images/bths_icon.jpg">
-        </div>
-
     </div>
 
 </body>
 </html>
-<footer>
-    <!--I can also make a dropdown in addition to a footer-->
-    <a class="footer" href="index.html">ABOUT ME</a>
-    <a class="footer" href="favorites.html">FAVORITES HOBBIES</a>
-    <a class="footer" href="skills.html">SKILLS</a>
-    <a class="footer" href="spots.html">SPOTS IN NYC</a>
-</footer>
