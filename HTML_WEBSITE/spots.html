@@ -88,6 +88,9 @@
             font-weight: bold;
             width: 200px;
         }
+        td{
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -98,16 +101,22 @@
                 <h2>Favorite Spots in NYC</h2>
                 <div class="mustSee">   
                     <div class="postcard">
-                        <img class="dumbo" src="/HTML_WEBSITE/images/dumbo.jpg">
-                        <ul>Dumbo, Brooklyn Bridge</ul>
+                        <img class="dumbo" src="/HTML_WEBSITE/images/dumbo.jpg" alt="dumbo">
+                        <ul>
+                            <li>Dumbo, Brooklyn Bridge</li>
+                            </ul>
                     </div>
                     <div class="postcard">
-                        <img class="centralPark" src="/HTML_WEBSITE/images/centralPark.jpg">
-                        <ul>Central Park</ul>
+                        <img class="centralPark" src="/HTML_WEBSITE/images/centralPark.jpg" alt="centralPark">
+                        <ul>
+                            <li>Central Park</li>
+                        </ul>
                     </div>                    
                     <div class="postcard">
-                        <img class="met" src="/HTML_WEBSITE/images/met.jpeg">
-                        <ul>Metropolitan Museum of Art</ul>
+                        <img class="met" src="/HTML_WEBSITE/images/met.jpeg" alt="MET">
+                        <ul>
+                            <li>Museum of Art</li>
+                        </ul>
                     </div>
                     
                 </div>
@@ -124,11 +133,15 @@
             </article>
         </div>
     </main>
+    <footer>
+        <!--Scroll disappears-->
+        <table>
+            <tr>
+              <td><a class="footer" href="index.html">ABOUT ME</a></td>
+              <td><a class="footer" href="favorites.html">HOBBIES</a></td>
+              <td><a class="footer" href="skills.html">SKILLS</a></td>
+            </tr>
+          </table>
+    </footer>
 </body>
-<footer>
-    <!--Scroll disappears-->
-    <a class="footer" href="index.html">ABOUT ME</a>
-    <a class="footer" href="favorites.html">HOBBIES</a>
-    <a class="footer" href="skills.html">SKILLS</a>
-</footer>
 </html>

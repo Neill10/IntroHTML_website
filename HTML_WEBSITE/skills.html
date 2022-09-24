@@ -73,7 +73,12 @@
             width: 600px;
             text-align: center;
         }
-        
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -88,10 +93,12 @@
                         </video>
                     </div>
                     <div class="SoftSkills">
-                        <p>Some of my Soft Skills include:</p>
-                        <ul>Teamwork</ul>
-                        <ul>Time Management</ul>
-                        <ul>Flexibility</ul>
+                        <h3>Some of my Soft Skills include:</h3>
+                        <ul>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                            <li>Flexibility</li>
+                        </ul>
                     </div>
                 </article>
 
@@ -100,22 +107,27 @@
                 <h2>Hard Skills</h2>
                 <article>
                     <div class="HardSkills">
-                        <p>My Hard Skills include:</p>
-                        <ul>Experience in Java&#169;</ul>
-                        <ul>Knowledgeable about Blockchain</ul>
-                        <ul>Good at Chess</ul>
+                        <h3>My Hard Skills include:</h3>
+                        <table>
+                            <tr>
+                              <td>Proficiency With Java</td>
+                              <td>Knowlegable about applications of Blockchain</td>
+                              <td>Good at Chess</td>
+                            </tr>
+                          </table>
                     </div>
                 </article>
                 <article>
                     <div>
-                        <p>Which hards skills do you share with me?</p>
+                        <h3>Which hard skills do you share with me?</h3>
                         <form>
+                            
                             <!-- User will select matching skills.-->
-                            <input type="checkbox"name="skill1" value="Java">
+                            <input type="checkbox" id="skill1" value="Java">
                             <label for="skill1"> Java</label><br>
-                            <input type="checkbox"name="skill2" value="Chess">
+                            <input type="checkbox" id="skill2" value="Chess">
                             <label for="skill2"> Chess</label><br>
-                            <input type="checkbox"name="skill3" value="Blockchain">
+                            <input type="checkbox" id="skill3" value="Blockchain">
                             <label for="skill3"> Blockchain </label>
                         </form>
                     </div>
@@ -123,10 +135,11 @@
             </div>
         </div>
     </main>
+    <footer>
+        <a class="footer" href="index.html">ABOUT ME</a>
+        <a class="footer" href="favorites.html">HOBBIES</a>
+        <a class="footer" href="spots.html">SPOTS IN NYC</a>
+    </footer>
 </body>
-<footer>
-    <a class="footer" href="index.html">ABOUT ME</a>
-    <a class="footer" href="favorites.html">HOBBIES</a>
-    <a class="footer" href="spots.html">SPOTS IN NYC</a>
-</footer>
+
 </html>
